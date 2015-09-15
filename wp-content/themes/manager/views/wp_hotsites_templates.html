@@ -1,0 +1,9 @@
+<input type="hidden" name="crsf" id="crsf" value={{crsf}}>
+<ul>
+  {{#templateOptions}}
+    <li>
+      <input id="template-{{id}}" name="{{name}}" type="radio" value="{{id}}" {{#checked}}checked{{/checked}}>
+      <label for="template-{{id}}"><img src="{{image}}" width="150">Temaplate {{id}}</label>
+    </li>
+  {{/templateOptions}}
+</ul>
